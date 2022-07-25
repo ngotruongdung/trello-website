@@ -1,3 +1,33 @@
-.App{
-  color:  #0bb;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+@import './globa.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3rem;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  background: $bg-color-primary;
+
+  .navbar{
+    color:  #fff;
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+  }
+
 }
